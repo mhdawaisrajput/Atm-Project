@@ -7,7 +7,7 @@ let pinAnswer = await inquirer.prompt([
         name: "pin",
         message: "please enter your pin:",
         type: "number",
-    }
+    },
 ]);
 console.log(pinAnswer.pin);
 // Statement:(if/else/else_if);
@@ -19,7 +19,7 @@ if (pinAnswer.pin === pinCode) {
             message: "please select option",
             type: "list",
             choices: ["withdraw", "check balance", "fast cash"],
-        }
+        },
     ]);
     console.log(operationAns);
     if (operationAns.operation === "withdraw") {
@@ -28,7 +28,7 @@ if (pinAnswer.pin === pinCode) {
                 name: "amount",
                 message: "enter your amount",
                 type: "number",
-            }
+            },
         ]);
         // =, -=, += : assigment operators.
         if (amountAns.amount < myBalance) {
